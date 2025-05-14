@@ -1,0 +1,27 @@
+[general]
+import = [
+  #"/usr/lib/node_modules/alacritty-themes/themes/Catppuccin-Mocha.toml"
+  #"/usr/lib/node_modules/alacritty-themes/themes/X-dotshare.toml"
+  #"/usr/lib/node_modules/alacritty-themes/themes/Nord.toml"
+]
+
+[window]
+opacity = 0.8
+
+[font]
+size = 13
+#normal = { family = "FiraCode Nerd Font", style = "Regular" }
+#normal = { family = "CaskaydiaCove Nerd Font", style = "Regular" }
+normal = { family = "Hack Nerd Font", style = "Regular" }
+
+
+
+[[keyboard.bindings]]
+chars = "\u001B[13;2u"
+key = "Return"
+mods = "Shift"
+
+[[keyboard.bindings]]
+chars = "\u001B[13;5u"
+key = "Return"
+mods = "Control"

@@ -1,0 +1,6 @@
+[wofi]
+# Theme file to use for customization
+theme = ~/.config/wofi/style.css
+
+mode = drun
+prompt =
