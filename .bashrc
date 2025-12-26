@@ -2,7 +2,6 @@
 
 export XDG_CURRENT_DESKTOP=Hyprland
 set -o vi
-export PATH=$PATH:/home/erast/Files/webDonnees/apache-jena-5.3.0/bin
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -14,13 +13,9 @@ PS1='[\u@\h \W]\$ '
 # Created by `pipx` on 2024-12-22 17:29:21
 export PATH="$PATH:/home/erast/.local/bin"
 
+#customs
 
-# Automatically do an ls after each cd
-alias cd='cd_func'
-cd_func() {
-  builtin cd "$@" && ls
-}
-
+alias cd="cd $@" && ls
 alias n='nvim'
 alias y='yazi'
 alias p='sudo pacman -S'
