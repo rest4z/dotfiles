@@ -15,7 +15,9 @@ export PATH="$PATH:/home/erast/.local/bin"
 
 #customs
 
-alias cd="cd $@" && ls
+cd() {
+    builtin cd "$@" && ls
+}
 alias n='nvim'
 alias y='yazi'
 alias p='sudo pacman -S'
